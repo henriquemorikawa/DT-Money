@@ -1,21 +1,31 @@
 import { Container } from "./Summary.styles";
+import totalImg from "../../assets/total.svg";
+import incomeImg from "../../assets/income.svg";
+import outcomeImg from "../../assets/outcome.svg";
 
-interface SummaryProps {
-  title: string;
-  img: string;
-  alt: string;
-  value: string;
-}
-
-export function Summary({ title, img, alt, value }: SummaryProps) {
+export function Summary() {
   return (
     <Container>
       <div>
         <header>
-          <p>{title}</p>
-          <img src={img} alt={alt} />
+          <p>Entradas</p>
+          <img src={incomeImg} alt="Entradas" />
         </header>
-        <strong>{value}</strong>
+        <strong>R$1000,00</strong>
+      </div>
+      <div>
+        <header>
+          <p>Saídas</p>
+          <img src={outcomeImg} alt="Saídas" />
+        </header>
+        <strong>- R$500,00</strong>
+      </div>
+      <div className="total">
+        <header>
+          <p>Total</p>
+          <img src={totalImg} alt="Total" />
+        </header>
+        <strong>R$500,00</strong>
       </div>
     </Container>
   );
