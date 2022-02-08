@@ -16,7 +16,7 @@ createServer({
           title: "catar latinha",
           type: "deposit",
           category: "mão de obra",
-          amount: 10000,
+          value: 10000,
           createdAt: new Date("2022-02-02 02:02:02"),
         },
         {
@@ -24,7 +24,7 @@ createServer({
           title: "breja",
           type: "withdraw",
           category: "bem estar",
-          amount: 5000,
+          value: 5000,
           createdAt: new Date("2022-02-02 02:02:02"),
         },
       ],
